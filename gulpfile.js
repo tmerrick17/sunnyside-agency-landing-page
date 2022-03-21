@@ -5,6 +5,8 @@ const cssNano = require('cssnano');
 const prefix = require('autoprefixer');
 const terser = require('gulp-terser');
 const concat = require('gulp-concat');
+const imgMinify = require('gulp-imagemin');
+const imgWebp = require('gulp-webp');
 const browserSync = require('browser-sync').create();
 
 const SASS_PATH = 'src/sass/**/*.sass'; 
@@ -25,6 +27,23 @@ function jsMin() {
     return src(JS_PATH)
         .pipe(terser())
         .pipe(dest('public/js'));
+}
+
+// minify images task
+function imgMin() {
+    return src('src/images/**/*.{jpg, png}')
+        .pipe(imgMinify([
+            imgMinify.mozjpeg({ quality: 80, progressive: true }),
+            imgMinify.optipng({ optiminzationLevel: 2 }),
+        ]))
+        .pipe(dest('public/images'));
+}
+
+// create webp images task
+function webpImg() {
+    return src('public/images/*.{jpg, png}')
+        .pipe(imgWebp())
+        .pipe(dest('public/images/webp'));
 }
 
 // browser-sync task
