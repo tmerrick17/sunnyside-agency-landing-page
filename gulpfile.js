@@ -11,6 +11,8 @@ const browserSync = require('browser-sync').create();
 
 const SASS_PATH = 'src/sass/**/*.sass'; 
 const JS_PATH = 'src/js/**/*.js'; 
+const IMG_PATH = 'src/images/*.{jpg,png}'; 
+const WEBP_PATH = 'public/images/*.{jpg,png}'; 
 
 // compile sass & minify task
 function sassMin() {
@@ -31,7 +33,7 @@ function jsMin() {
 
 // minify images task
 function imgMin() {
-    return src('src/images/**/*.{jpg, png}')
+    return src(IMG_PATH)
         .pipe(imgMinify([
             imgMinify.mozjpeg({ quality: 80, progressive: true }),
             imgMinify.optipng({ optiminzationLevel: 2 }),
@@ -40,10 +42,10 @@ function imgMin() {
 }
 
 // create webp images task
-function webpImg() {
+function webpImg() { 
     return src('public/images/*.{jpg, png}')
         .pipe(imgWebp())
-        .pipe(dest('public/images/webp'));
+        .pipe(dest('public/images'));
 }
 
 // browser-sync task
@@ -54,11 +56,15 @@ function watchTask() {
     watch('*.html').on('change', browserSync.reload)
     watch(SASS_PATH, sassMin);
     watch(JS_PATH, jsMin);
+    watch(IMG_PATH, imgMin);
+    watch(WEBP_PATH, webpImg);
 }
 
 // default gulp task
 exports.default = series(
     sassMin,
     jsMin,
+    imgMin,
+    webpImg,
     watchTask,
 );

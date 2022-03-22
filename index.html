@@ -9,45 +9,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+
     <link rel="stylesheet" href="public/css/main.min.css">
     <title>Starter</title>
 </head>
 <body>
     
     <header>
-        <div class="logo">
-            <img src="public/images/svgs/logo.svg" alt="Sunnyside Logo">
+        <div class="row">
+            <div class="col-9">
+                <img src="public/images/svgs/logo.svg" alt="Sunnyside Logo">
+            </div>
+            <nav class="col-3 nav-mbl">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="col-3 nav-dsk">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav-mbl">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="nav-dsk">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        
+        <div class="row">
+            <div class="col">
+                <h1>We are creatives</h1>
+            </div>
+        </div>
     </header>
 
     <main>
+        <div>
+            <picture>
+                <source srcset="public/images/image-transform-mbl.webp">
+                <source media="(min-width: 810px)"
+                        srcset="public/images/image-transform-dsk.webp">
+                <img src="public/images/image-transform-mbl.jpg" alt="Egg on a yellow background">
+            </picture>
+        </div>
+        <section>
+            <h2>Transform your brand</h2>
+            <p>
+                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+            </p>
+            <h3>Learn more</h3>
+        </section>
 
-        <h1>We are creatives</h1>
 
-        Transform your brand
+        <section>
 
-        We are a full-service creative agency specializing in helping brands grow fast. 
-        Engage your clients through compelling visuals that do most of the marketing for you.
-
-        Learn more
-
+        </section>
         Stand out to the right audience
 
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
