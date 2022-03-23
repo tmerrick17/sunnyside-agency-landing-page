@@ -9,19 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-
     <link rel="stylesheet" href="public/css/main.min.css">
     <title>Starter</title>
 </head>
 <body>
     
     <header>
-        <div class="row">
-            <div class="col-9">
+            <div>
                 <img src="public/images/svgs/logo.svg" alt="Sunnyside Logo">
             </div>
-            <nav class="col-3 nav-mbl">
+            <nav class="col-xs-3 nav-mbl">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -29,7 +26,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <nav class="col-3 nav-dsk">
+            <nav class="col-md-4 nav-dsk">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -37,69 +34,118 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h1>We are creatives</h1>
-            </div>
-        </div>
+            <h1>We are creatives</h1>
     </header>
 
-    <main>
-        <div>
-            <picture>
-                <source srcset="public/images/image-transform-mbl.webp">
-                <source media="(min-width: 810px)"
-                        srcset="public/images/image-transform-dsk.webp">
-                <img src="public/images/image-transform-mbl.jpg" alt="Egg on a yellow background">
-            </picture>
+    <main>        
+        <picture>
+            <source srcset="public/images/img-transform-mbl.webp">
+            <source media="(min-width: 810px)"
+                    srcset="public/images/img-transform-dsk.webp">
+            <img src="public/images/img-transform-mbl.jpg" alt="Egg on a yellow background">
+        </picture>
+
+        <div class="container">
+            <section class="container__content">
+                <h2 class="container__content__hdr">Transform your brand</h2>
+                <p class="container__content__p">
+                    We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+                </p>
+                <h3 class="container__content__lnk">
+                    <a href="#">Learn more</a>
+                </h3>
+            </section>
         </div>
-        <section>
-            <h2>Transform your brand</h2>
-            <p>
-                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
-            </p>
-            <h3>Learn more</h3>
-        </section>
+        
+        <picture>
+            <source srcset="public/images/img-stand-out-mbl.webp">
+            <source media="(min-width: 810px)"
+                    srcset="public/images/img-stand-out-dsk.webp">
+            <img src="public/images/img-stand-out-mbl.jpg" alt="Egg on a yellow background">
+        </picture>
+        
+        <div class="container">
+            <section class="container__content">
+                <h2 class="container__content__hdr">Stand out to the right audience</h2>
+                <p class="container__content__p">
+                    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                </p>
+                
+                <h3 class="container__content__lnk">
+                    <a href="#">Learn more</a>
+                </h3>
+            </section>
+        </div>
+        
+        
+        <div class="container container--graphic-design">
+            <picture class="image-graphic-design">
+                <source srcset="public/images/img-graphic-design-mbl.webp">
+                <source media="(min-width: 810px)"
+                        srcset="public/images/img-graphic-design-dsk.webp">
+                <img src="public/images/img-graphic-design-mbl.jpg" alt="Two cherries on light green background">
+            </picture>
+            <section class="container__content text-graphic-design">
+                <h2 class="container__content__hdr">Graphic Design</h2>
+                <p class="container__content__p">
+                    Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                </p>
+            </section>
+        </div>
+        
+        
+        <div class="container container--photography">
+            <picture class="image-photography">
+                <source srcset="public/images/img-photography-mbl.webp">
+                <source media="(min-width: 810px)"
+                        srcset="public/images/img-photography-dsk.webp">
+                <img src="public/images/img-photography-mbl.jpg" alt="Two cherries on light green background">
+            </picture>
+            <section class="container__content text-photography">
+                <h2 class="container__content__hdr">Photography</h2>
+                <p class="container__content__p">
+                    Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                </p>
+            </section>
+        </div>
+        
+        <h2>Client testimonials</h2>
 
+        <div>
+            <q>
+                We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+            </q>
+            <h3>Emily R.</h3>
+            <h4>Marketing Director</h4>
+        </div>
 
-        <section>
+        <div>
+            <q>
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+            </q>
+            <h3>Thomas S.</h3>
+            <h4>Chief Operating Officer</h4>
+        </div>
 
-        </section>
-        Stand out to the right audience
-
-        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-        Learn more
-
-        Graphic design
-        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-        Photography
-        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-        Client testimonials
-
-        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-        Emily R.
-        Marketing Director
-
-        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-        Thomas S.
-        Chief Operating Officer
-
-        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        Jennie F.
-        Business Owner
-
-        About
-        Services
-        Projects
-        Contact
-    
+        <div>
+            <q>
+                Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </q>
+            <h3>Jennie F.</h3>
+            <h4>Business Owner</h4>
+        </div>
+        
     </main>
-
+    
     <footer>
+
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
         <p>Challenge by
             <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor</a> Coded by <a class="footer__link" href="https://github.com/tmerrick17">
