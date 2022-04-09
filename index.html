@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -25,36 +25,45 @@
     <title>Sunnyside Landing Page</title>
 </head>
 <body>
-    
-    <header>
-        <!-- Logo for header -->
-        <img class="logo" src="public/images/svgs/logo.svg" alt="Sunnyside Logo">
 
-        <!-- Nav for Mobile -->
-        <nav class="col-xs-3 nav-mbl">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-top">
+            <!-- Logo for header -->
+            <img class="logo" src="public/images/svgs/logo.svg" alt="Sunnyside Logo">
+
+            <!-- Hamburger -->
+            <button id="hamburger" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Nav for Mobile -->
+            <nav class="nav-mbl">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a id="btn-contact" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- Nav for Desktop -->
-        <nav class="col-md-4 nav-dsk">
+        <!-- <nav class="nav-dsk">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
-        <!-- Header Title -->
-        <h1>We are creatives</h1>
+        <div class="header-bottom">
+            <!-- Header Title -->
+            <h1>We are creatives</h1>
 
-        <!-- Down Arrow -->
-        <img class="arrow-down" src="public/images/svgs/icon-arrow-down.svg" alt="white arrow pointing down">
+            <!-- Down Arrow -->
+            <img class="arrow-down" src="public/images/svgs/icon-arrow-down.svg" alt="white arrow pointing down">
+        </div>
     </header>
 
     <main>
@@ -76,7 +85,7 @@
                 <a href="#">Learn more</a>
             </h3>
         </section>
-        
+
         <!-- 2nd section image -->
         <picture>
             <source srcset="public/images/img-stand-out-mbl.webp">
@@ -84,19 +93,19 @@
                     srcset="public/images/img-stand-out-dsk.webp">
             <img src="public/images/img-stand-out-mbl.jpg" alt="Pink glass pink background">
         </picture>
-        
+
         <!-- 2nd section text -->
         <section class="content">
             <h2 class="content__hdr">Stand out to the right audience</h2>
             <p class="content__p">
-                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
             </p>
-            
+
             <h3 class="content__lnk">
                 <a href="#">Learn more</a>
             </h3>
         </section>
-        
+
         <!-- 3rd section image and text -->
         <section class="content-gd">
             <h2 class="content-gd__hdr">Graphic Design</h2>
@@ -104,7 +113,7 @@
                 Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
             </p>
         </section>
-        
+
         <!-- 4th sectioon image and text -->
         <section class="content-ph">
             <h2 class="content-ph__hdr">Photography</h2>
@@ -112,11 +121,11 @@
                 Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
             </p>
         </section>
-        
+
         <!-- content-t = Content for Testimonials -->
         <section class="content-t">
             <h2 class="content-t__hdr">Client testimonials</h2>
-    
+
             <div class="content-t__sub">
                 <picture class="content-t__img">
                     <source srcset="public/images/img-emily.webp">
@@ -128,7 +137,7 @@
                 <h3 class="content-t__name">Emily R.</h3>
                 <h4 class="content-t__position">Marketing Director</h4>
             </div>
-    
+
             <div class="content-t__sub">
                 <picture class="content-t__img">
                     <source srcset="public/images/img-thomas.webp">
@@ -140,7 +149,7 @@
                 <h3 class="content-t__name">Thomas S.</h3>
                 <h4 class="content-t__position">Chief Operating Officer</h4>
             </div>
-    
+
             <div class="content-t__sub">
                 <picture class="content-t__img">
                     <source srcset="public/images/img-jennie.webp">
@@ -181,9 +190,9 @@
                 <img src="public/images/img-gallery-sugarcubes-mbl.jpg" alt="sugar cubes on pink background">
             </picture>
         </div>
-        
+
     </main>
-    
+
     <footer>
 
         <!-- Logo for footer -->
