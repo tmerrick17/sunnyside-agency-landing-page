@@ -1,0 +1,1 @@
+const openMenu=document.querySelector("#openMenu"),closeMenu=document.querySelector("#closeMenu"),navList=document.querySelector("#nav-list");function show(){navList.style.display="flex",navList.style.top="0"}function close(){navList.style.top="-100%"}openMenu.addEventListener("click",show),closeMenu.addEventListener("click",close);
