@@ -25,7 +25,7 @@
                 <!-- Logo for header -->
                 <img class="logo" src="public/images/svgs/logo.svg" alt="Sunnyside Logo">
                 <!-- Hamburger -->
-                <div id="openMenu" class="hamburger">
+                <div id="toggleMenu" class="hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul id="nav-list" class="nav-list">
@@ -51,41 +51,45 @@
     <main>
         <!-- 1st section image -->
         <picture id="dsk-grid-2">
-            <source srcset="public/images/img-transform-mbl.webp">
-            <source media="(min-width: 810px)"
+            <source media="(min-width: 768px)"
                     srcset="public/images/img-transform-dsk.webp">
-            <img src="public/images/img-transform-mbl.jpg" alt="Egg on a yellow background">
+            <source srcset="public/images/img-transform-mbl.webp">
+            <img src="public/images/img-transform-dsk.jpg" alt="Egg on a yellow background">
         </picture>
 
         <!-- 2nd section text-->
         <section id="dsk-grid-1" class="content">
-            <h2 class="content__hdr">Transform your brand</h2>
-            <p class="content__p">
-                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
-            </p>
-            <h3 class="content__lnk">
-                <a href="#">Learn more</a>
-            </h3>
+            <div class="content__inner">
+                <h2 class="content__hdr">Transform your brand</h2>
+                <p class="content__p">
+                    We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+                </p>
+                <h3 class="content__lnk">
+                    <a class="content__text-clr1" href="#">Learn more</a>
+                </h3>
+            </div>
         </section>
 
         <!-- 3rd section image -->
         <picture id="dsk-grid-3">
-            <source srcset="public/images/img-stand-out-mbl.webp">
-            <source media="(min-width: 810px)"
+            <source media="(min-width: 768px)"
                     srcset="public/images/img-stand-out-dsk.webp">
-            <img src="public/images/img-stand-out-mbl.jpg" alt="Pink glass pink background">
+            <source srcset="public/images/img-stand-out-mbl.webp">
+            <img src="public/images/img-stand-out-dsk.jpg" alt="Pink glass pink background">
         </picture>
 
         <!-- 4th section text -->
         <section id="dsk-grid-4" class="content">
-            <h2 class="content__hdr">Stand out to the right audience</h2>
-            <p class="content__p">
-                Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
-            </p>
+            <div class="content__inner">
+                <h2 class="content__hdr">Stand out to the right audience</h2>
+                <p class="content__p">
+                    Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+                </p>
 
-            <h3 class="content__lnk">
-                <a href="#">Learn more</a>
-            </h3>
+                <h3 class="content__lnk">
+                    <a class="content__text-clr2" href="#">Learn more</a>
+                </h3>
+            </div>
         </section>
 
         <!-- 5th section image and text -->
@@ -108,68 +112,70 @@
         <section id="dsk-grid-7" class="content-t">
             <h2 class="content-t__hdr">Client testimonials</h2>
 
-            <div class="content-t__sub">
-                <picture class="content-t__img">
-                    <source srcset="public/images/img-emily.webp">
-                    <img class="content-t__img__round" src="public/images/img-emily.jpg" alt="Emily medium shot portrait">
-                </picture>
-                <q class="content-t__q">
-                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-                </q>
-                <h3 class="content-t__name">Emily R.</h3>
-                <h4 class="content-t__position">Marketing Director</h4>
-            </div>
+            <div class="content-t__sub-container">
+                <div class="content-t__sub">
+                    <picture class="content-t__img">
+                        <source srcset="public/images/img-emily.webp">
+                        <img class="content-t__img__round" src="public/images/img-emily.jpg" alt="Emily medium shot portrait">
+                    </picture>
+                    <q class="content-t__q">
+                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                    </q>
+                    <h3 class="content-t__name">Emily R.</h3>
+                    <h4 class="content-t__position">Marketing Director</h4>
+                </div>
 
-            <div class="content-t__sub">
-                <picture class="content-t__img">
-                    <source srcset="public/images/img-thomas.webp">
-                    <img class="content-t__img__round" src="public/images/img-thomas.jpg" alt="Thomas medium shot portrait">
-                </picture>
-                <q class="content-t__q">
-                    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-                </q>
-                <h3 class="content-t__name">Thomas S.</h3>
-                <h4 class="content-t__position">Chief Operating Officer</h4>
-            </div>
+                <div class="content-t__sub">
+                    <picture class="content-t__img">
+                        <source srcset="public/images/img-thomas.webp">
+                        <img class="content-t__img__round" src="public/images/img-thomas.jpg" alt="Thomas medium shot portrait">
+                    </picture>
+                    <q class="content-t__q">
+                        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                    </q>
+                    <h3 class="content-t__name">Thomas S.</h3>
+                    <h4 class="content-t__position">Chief Operating Officer</h4>
+                </div>
 
-            <div class="content-t__sub">
-                <picture class="content-t__img">
-                    <source srcset="public/images/img-jennie.webp">
-                    <img class="content-t__img__round" src="public/images/img-jennie.jpg" alt="Jennie medium shot portrait">
-                </picture>
-                <q class="content-t__q">
-                    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-                </q>
-                <h3 class="content-t__name">Jennie F.</h3>
-                <h4 class="content-t__position">Business Owner</h4>
+                <div class="content-t__sub">
+                    <picture class="content-t__img">
+                        <source srcset="public/images/img-jennie.webp">
+                        <img class="content-t__img__round" src="public/images/img-jennie.jpg" alt="Jennie medium shot portrait">
+                    </picture>
+                    <q class="content-t__q">
+                        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                    </q>
+                    <h3 class="content-t__name">Jennie F.</h3>
+                    <h4 class="content-t__position">Business Owner</h4>
+                </div>
             </div>
         </section>
 
         <!-- Image gallery -->
         <div id="dsk-grid-8" class="img-gallery">
             <picture>
-                <source srcset="public/images/img-gallery-milkbottles-mbl.webp">
                 <source media="(min-width: 810px)"
                         srcset="public/images/img-gallery-milkbottles-dsk.webp">
-                <img src="public/images/img-gallery-milkbottles-mbl.jpg" alt="milk bottles on blue background">
+                <source srcset="public/images/img-gallery-milkbottles-mbl.webp">
+                <img src="public/images/img-gallery-milkbottles-dsk.jpg" alt="milk bottles on blue background">
             </picture>
             <picture>
-                <source srcset="public/images/img-gallery-orange-mbl.webp">
                 <source media="(min-width: 810px)"
                         srcset="public/images/img-gallery-orange-dsk.webp">
-                <img src="public/images/img-gallery-orange-mbl.jpg" alt="top view of orange on plate">
+                <source srcset="public/images/img-gallery-orange-mbl.webp">
+                <img src="public/images/img-gallery-orange-dsk.jpg" alt="top view of orange on plate">
             </picture>
             <picture>
-                <source srcset="public/images/img-gallery-cone-mbl.webp">
                 <source media="(min-width: 810px)"
                         srcset="public/images/img-gallery-cone-dsk.webp">
-                <img src="public/images/img-gallery-cone-mbl.jpg" alt="empty ice cream cone on blue background">
+                <source srcset="public/images/img-gallery-cone-mbl.webp">
+                <img src="public/images/img-gallery-cone-dsk.jpg" alt="empty ice cream cone on blue background">
             </picture>
             <picture>
-                <source srcset="public/images/img-gallery-sugar-cubes-mbl.webp">
                 <source media="(min-width: 810px)"
                         srcset="public/images/img-gallery-sugar-cubes-dsk.webp">
-                <img src="public/images/img-gallery-sugarcubes-mbl.jpg" alt="sugar cubes on pink background">
+                <source srcset="public/images/img-gallery-sugar-cubes-mbl.webp">
+                <img src="public/images/img-gallery-sugarcubes-dsk.jpg" alt="sugar cubes on pink background">
             </picture>
         </div>
 
