@@ -37,8 +37,8 @@ Personal goals:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-with-mobile-menu-animation-ryrB_DTS9)
+- Live Site URL: [Sunnyside Agency Landing Page](https://tmerrick17.github.io/sunnyside-agency-landing-page/)
 
 ## My process
 
